@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".racquet_details_two">
+    <ImageView
+        android:id="@+id/img_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00FF08"
+        />
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/ic_baseline_keyboard_backspace_24" />
+
+
+    <TextView
+        android:id="@+id/sstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_topbar"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentStart="true"
+        android:fontFamily="@font/black_ops_one"
+        android:text="RACQUET DETAILS"
+        android:textColor="@color/black"
+        android:textSize="26dp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="-14dp"
+        android:layout_below="@id/sstext"
+        android:src="@drawable/arrow_right"
+        android:tint="@color/black" />
+
+    <View
+
+        android:layout_width="245dp"
+        android:layout_height="1.8dp"
+        android:layout_below="@id/sstext"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="10dp"
+        android:background="#000000"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/img_profli"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/img_topbar"
+        android:layout_marginEnd="20dp"
+        android:foregroundGravity="right"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/profile" />
+    
+    
+    <ScrollView
+        android:layout_below="@id/img_profli"
+        android:id="@+id/scrolviewtable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <TableLayout
+        android:id="@+id/table1"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_below="@id/img_profli"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_height="20dp"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:text="Racquet Brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_borders"
+                android:textColor="#000000"
+                android:padding="4dp"
+                android:gravity="center"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/racquet_brand"
+                android:text=""
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_borders"
+                android:textColor="#000000"
+                android:padding="4dp"
+                android:textSize="20dp"/>
+
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_height="20dp"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:text="Racquet Model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_borders"
+                android:textColor="#000000"
+                android:padding="4dp"
+                android:gravity="center"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/racquet_model"
+                android:text=""
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_borders"
+                android:textColor="#000000"
+                android:padding="4dp"
+                android:textSize="20dp"/>
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_height="20dp"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:text="String Type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_borders"
+                android:textColor="#000000"
+                android:padding="4dp"
+                android:gravity="center"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/string_type"
+                android:text=""
+                android:layout_height="wrap_content"
+                android:layout_weight="1" android:background="@drawable/edit_text_borders"
+                android:textColor="#000000"
+                android:padding="4dp"
+                android:textSize="20dp"/>
+
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_height="20dp"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:text="String Tension"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_borders"
+                android:textColor="#000000"
+                android:padding="4dp"
+                android:gravity="center"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/string_tension"
+                android:text=""
+                android:layout_height="wrap_content"
+                android:layout_weight="1" android:background="@drawable/edit_text_borders"
+                android:textColor="#000000"
+                android:padding="4dp"
+                android:textSize="20dp"/>
+
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_height="20dp"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:text="String Colour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_borders"
+                android:textColor="#000000"
+                android:padding="4dp"
+                android:gravity="center"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/string_color"
+                android:text=""
+                android:layout_height="wrap_content"
+                android:layout_weight="1" android:background="@drawable/edit_text_borders"
+                android:textColor="#000000"
+                android:padding="4dp"
+                android:textSize="20dp"/>
+
+
+        </TableRow>
+
+
+
+
+    </TableLayout>
+    <Button
+        android:id="@+id/plusbtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+"
+        android:layout_below="@id/table1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:textSize="30dp"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/tv_value"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/table1"
+
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:text="1"
+        android:layout_toStartOf="@id/plusbtn"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/minusbtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/table1"
+
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@id/tv_value"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="-"
+        android:textSize="30dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+    <Button
+        android:id="@+id/btn_addracket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Racket"
+        android:layout_above="@id/bottembar"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn_checkout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottembar"
+        android:layout_marginEnd="20dp"
+        android:text="CHECKOUT"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        />
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottembar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#36FE3D"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="40dp"
+                android:layout_toStartOf="@+id/botem_loction"
+                android:src="@drawable/calendar"
+                />
+
+
+
+            <ImageView
+                android:id="@+id/botem_loction"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="40dp"
+                android:layout_toStartOf="@+id/homebtn"
+                android:src="@drawable/location" />
+
+
+            <ImageView
+                android:id="@+id/homebtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/stringupupscreen" />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/chat"
+                android:id="@+id/botem_chat"
+                android:layout_toEndOf="@id/homebtn"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_toEndOf="@id/botem_chat"
+                android:src="@drawable/notification"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="40dp"
+
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+    </android.support.design.widget.BottomNavigationView>
+
+</RelativeLayout>
