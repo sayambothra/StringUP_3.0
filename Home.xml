@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+    <ImageView
+        android:id="@+id/img_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00FF08"
+        />
+
+    <SearchView
+        android:id="@+id/search_bar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_topbar"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/img_profil"
+
+        android:background="@drawable/search_back" />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/img_profil"
+        android:src="@drawable/profile"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/img_topbar"
+        android:layout_alignParentEnd="true"
+        />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottembar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#36FE3D"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="40dp"
+                android:layout_toStartOf="@+id/botem_loction"
+                android:src="@drawable/calendar"
+                />
+
+
+
+            <ImageView
+                android:id="@+id/botem_loction"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="40dp"
+                android:layout_toStartOf="@+id/homebtn"
+                android:src="@drawable/location" />
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/homebtn"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/stringupupscreen"
+                />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/chat"
+                android:id="@+id/botem_chat"
+                android:layout_toEndOf="@id/homebtn"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_toEndOf="@id/botem_chat"
+                android:src="@drawable/notification"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="40dp"
+
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+    </android.support.design.widget.BottomNavigationView>
+
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+
+
+        android:layout_above="@+id/bottembar"
+        android:layout_below="@id/search_bar"
+        >
+        <RelativeLayout
+            android:id="@+id/sv_one"
+            android:layout_marginTop="20dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            >
+            <ViewFlipper
+                android:id="@+id/flipper"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:autoStart="true"
+                android:flipInterval="3000"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/football"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/svimg"
+                    />
+
+
+
+            </ViewFlipper>
+
+            <RelativeLayout
+                android:id="@+id/arenabooking"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:layout_below="@id/flipper"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/bag_layout"
+
+
+                >
+
+                <ImageView
+                    android:id="@+id/img_studim"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/studim" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="60dp"
+
+                    android:fontFamily="@font/black_ops_one"
+                    android:text="ARENA \nBOOKING"
+
+                    android:textColor="@color/black"
+                    android:textSize="23dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:id="@+id/stringservices"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/bag_layout"
+                android:layout_below="@id/arenabooking"
+                android:layout_marginTop="50dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="60dp"
+
+                    android:fontFamily="@font/black_ops_one"
+                    android:text="STRINGING \nSERVICES"
+                    android:textColor="@color/black"
+                    android:textSize="26dp" />
+
+
+
+
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/img_racket"
+                android:layout_width="200dp"
+                android:layout_height="240dp"
+                android:layout_alignTop="@+id/stringservices"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-40dp"
+                android:rotation="-7"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/rakcet" />
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
