@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".String_services">
+
+    <ImageView
+        android:id="@+id/img_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00FF08"
+        />
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/ic_baseline_keyboard_backspace_24"/>
+
+
+    <TextView
+        android:id="@+id/sstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_topbar"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+       android:layout_marginEnd="20dp"
+        android:layout_alignParentStart="true"
+        android:fontFamily="@font/black_ops_one"
+        android:text="SELECT SPORTS"
+        android:textColor="@color/black"
+        android:textSize="26dp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="-1dp"
+           android:layout_marginTop="-14dp"
+            android:layout_below="@id/sstext"
+            android:src="@drawable/arrow_right"
+            android:tint="@color/black" />
+
+        <View
+
+            android:layout_width="220dp"
+            android:layout_height="1.8dp"
+            android:layout_below="@id/sstext"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="10dp"
+            android:background="#000000"
+
+            />
+
+
+        <ImageView
+            android:id="@+id/img_profli"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+           android:layout_marginTop="15dp"
+            android:layout_below="@id/img_topbar"
+            android:layout_marginEnd="20dp"
+            android:foregroundGravity="right"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/profile" />
+
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_below="@id/img_profli"
+        android:layout_above="@id/bottembar"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/ll_badminton"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/slect_sports_back"
+            android:layout_height="180dp">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="11dp"
+                android:src="@drawable/racketthree"
+                android:scaleType="centerCrop"
+
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BADMINTON"
+                android:fontFamily="@font/black_ops_one"
+                android:textColor="@color/black"
+                android:textSize="26dp"
+                android:layout_marginStart="15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="35dp"
+                />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/ll_tennis"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/ll_badminton"
+            android:layout_width="match_parent"
+            android:background="@drawable/slect_sports_back"
+            android:layout_height="180dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="11dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="11dp"
+                android:src="@drawable/badminton"
+                android:scaleType="centerCrop"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TENNIS"
+                android:fontFamily="@font/black_ops_one"
+                android:textColor="@color/black"
+                android:textSize="26dp"
+                android:layout_marginStart="15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="35dp"
+                />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/ll_squash"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/ll_tennis"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+
+            android:background="@drawable/slect_sports_back"
+            android:layout_height="180dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginBottom="11dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/squash"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SQUASH"
+                android:fontFamily="@font/black_ops_one"
+                android:textColor="@color/black"
+                android:textSize="26dp"
+                android:layout_marginStart="15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="35dp"
+                />
+
+
+
+        </RelativeLayout>
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottembar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#36FE3D"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="40dp"
+                android:layout_toStartOf="@+id/botem_loction"
+                android:src="@drawable/calendar"
+                />
+
+
+
+            <ImageView
+                android:id="@+id/botem_loction"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="40dp"
+                android:layout_toStartOf="@+id/homebtn"
+                android:src="@drawable/location" />
+
+
+            <ImageView
+                android:id="@+id/homebtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/stringupupscreen" />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/chat"
+                android:id="@+id/botem_chat"
+                android:layout_toEndOf="@id/homebtn"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_toEndOf="@id/botem_chat"
+                android:src="@drawable/notification"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="40dp"
+
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+    </android.support.design.widget.BottomNavigationView>
+
+
+</RelativeLayout>
